@@ -97,6 +97,7 @@ Bootstrap为我们设置了全局 CSS 样式，基本的 HTML 元素均可以通
 </div>
 ```
 [运行代码](http://martin0809.github.io/yetang/grid.html#grid)
+
 同时我们还可以设置列的偏移，使用 .col-md-offset-* 类可以将列向右侧偏移。这些类实际是通过使用 * 选择器为当前元素增加了左侧的边距（margin）。例如，.col-md-offset-4 类将 .col-md-4 元素向右侧偏移了4个列（column）的宽度：
 ```
 <div class="row">
@@ -164,6 +165,7 @@ $('#identifier').modal(options)
 </div><!-- /.modal -->
 ```
 [运行代码](http://martin0809.github.io/yetang/grid.html#modalDemo)
+
 代码讲解：
 * 使用模态窗口，您需要有某种触发器。您可以使用按钮或链接。这里我们使用的是按钮。
 * 如果您仔细查看上面的代码，您会发现在 `<button>` 标签中，`data-target="#myModal"` 是您想要在页面上加载的模态框的目标。您可以在页面上创建多个模态框，然后为每个模态框创建不同的触发器。现在，很明显，您不能在同一时间加载多个模块，但您可以在页面上创建多个在不同时间进行加载。
