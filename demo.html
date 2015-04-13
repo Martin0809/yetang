@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>media query</title>
+	<style>
+		.box {
+			width: 100%;
+			height: 500px;
+		}	
+		.red {
+			float: left;
+			width: 70%;
+			height: 100%;
+			background: red;
+		}
+		.green {
+			float: left;
+			width: 30%;
+			height: 100%;
+			background: green;
+		}
+
+		@media (max-width: 900px) {
+			.red {
+				width: 100%;
+			}
+			.green {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="red"></div>
+		<div class="green"></div>
+	</div>
+</body>
+</html>
